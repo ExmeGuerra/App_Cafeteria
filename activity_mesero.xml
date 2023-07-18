@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/meserosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meseros"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/ordenesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Órdenes"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <!-- Agrega aquí la tabla -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/regresarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Regresar" />
+
+        <Button
+            android:id="@+id/autorizarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Autorizar" />
+
+    </LinearLayout>
+
+</LinearLayout>
