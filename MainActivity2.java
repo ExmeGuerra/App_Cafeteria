@@ -1,5 +1,6 @@
 package com.example.cafeteria_exme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,9 +10,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
-    private TextView ordersTitleTextView;
-    private ListView ordersListView;
-    private Button backButton;
+     TextView ordersTitleTextView;
+     ListView ordersListView;
+     Button backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +21,15 @@ public class MainActivity2 extends AppCompatActivity {
         ordersTitleTextView = findViewById(R.id.ordersTitleTextView);
         ordersListView = findViewById(R.id.ordersListView);
         backButton = findViewById(R.id.backButton);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
